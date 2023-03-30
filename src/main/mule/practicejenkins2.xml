@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="practiceJenkins2Flow" doc:id="54904a7c-c8f4-432e-a83c-71f6c8d83b5f" >
 		<http:listener doc:name="HTTP:8034/practiceJenkins2" doc:id="f784b8ff-5152-4901-bb02-dabfecf8c584" config-ref="HTTP_Listener_config" path="/practiceJenkins2"/>
-		<set-payload value='#["this is practiceJenkins2 flow"]' doc:name='"this is practiceJenkins2 flow"' doc:id="e99d3387-c640-44d5-b6ab-7760f4dc0510" />
+		<set-payload value='#["this is practiceJenkins2 flow payload"]' doc:name='"this is practiceJenkins2 flow payload"' doc:id="e99d3387-c640-44d5-b6ab-7760f4dc0510" />
 		<logger level="INFO" doc:name="payload" doc:id="518a8871-5fdc-44a6-ad8f-8a41c1bae60a" message="#[payload]"/>
 	</flow>
 </mule>
